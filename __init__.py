@@ -1,5 +1,5 @@
 # The MIT License (MIT)
-# Copyright (c) 2016 Postsai
+# Copyright (c) 2016-2026 Postsai
 #
 # Permission is hereby granted, free of charge, to any person obtaining a
 # copy of this software and associated documentation files (the "Software"),
@@ -23,7 +23,7 @@
 
 class Extension:
 
-    def install_extension_setup(self, config):
+    def install_extension_setup(self, _config):
         """install.py - hook invoked after reading the configuration file"""
 
         print("Initializing " + __name__)
@@ -58,20 +58,20 @@ class Extension:
 
 
 
-    def query_extension_setup(self, config):
+    def query_extension_setup(self, _config):
         """query-page hook invoked after reading the configuration file"""
 
         pass
 
 
-    def query_create_query(self, postsai, form):
+    def query_create_query(self, _postsai, _form):
         """query-page hook invoked after postsai.sql and postsai.data have been created, but before the statement
            is executed. postsai.sql and postsai.data may be modified at this point"""
 
         pass
 
 
-    def query_post_process_result(self, postsai, form, db, result):
+    def query_post_process_result(self, _postsai, _form, _db, result):
         """query-page hook invoked after the database query completed. The result object contains ui-configuration,
         list of repositories, and the actual query results from the database. The result object may be modified here.
         Extension specific information should be communicated to the client in the result["extension"][__name__]

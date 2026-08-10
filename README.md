@@ -26,5 +26,5 @@ Please include LICENSE.txt and README.md in your extension with appropriate cont
 
 Legal
 -
-(C) Copyright 2016 Postsai. Postsai is released as Free and Open Source Software under [MIT](https://raw.githubusercontent.com/postsai/postsai/master/LICENSE.txt) license.
+(C) Copyright 2016-2026 Postsai. Postsai is released as Free and Open Source Software under [MIT](https://raw.githubusercontent.com/postsai/postsai/master/LICENSE.txt) license.
 
